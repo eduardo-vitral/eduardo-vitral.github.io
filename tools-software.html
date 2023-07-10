@@ -1,0 +1,309 @@
+<!DOCTYPE HTML>
+<!--
+	Solid State by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Software and tools</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=default'></script>
+	</head>
+	<body class="is-preload">
+
+		<!-- Page Wrapper -->
+			<div id="page-wrapper">
+
+				<!-- Header -->
+					<header id="header" class="alt">
+						<h1><a href="index.html">Eduardo Vitral</a></h1>
+						<nav>
+							<a href="#menu">Menu</a>
+						</nav>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<div class="inner">
+							<h2>Menu</h2>
+							<ul class="links">
+								<li><a target="_blank" rel="noopener noreferrer" href="index.html">Home</a></li>
+								<li><a target="_blank" rel="noopener noreferrer" href="https://ui.adsabs.harvard.edu/public-libraries/MYLe6xnaSHW_o_Gi1b3-cQ">Articles</a></li>
+								<li><a target="_blank" rel="noopener noreferrer" href="pressrelease.html">On the news</a></li>
+							</ul>
+							<a href="#" class="close">Close</a>
+						</div>
+					</nav>
+					
+				<!-- Wrapper -->
+					<section id="wrapper">
+						<header>
+							<div class="inner">
+								<h2>Research</h2>
+							</div>
+						</header>
+
+						<!-- Content -->
+							<div class="wrapper">
+								<div class="inner">									
+									<section>
+										<h3 class="major"><font size="+2">Software and tools</font></h3>
+										<br><br>
+										<h4><font size="+0">BALROGO: Bayesian Astrometric Likelihood Recovery of Galactic Objects </font></h4>
+										<p><span class="image left"><img src="images/balrogo.png" alt="" 
+										<figcaption><font size="+0"><em>
+										 BALRoGO GitLab repository:
+										<a target="profile" href="https://gitlab.com/eduardo-vitral/balrogo">click here</a>
+										</em></font></figcaption>
+										</span>
+										
+										BALRoGO is an open source Python software I created, that performs different 
+										aspects of dynamical modeling of galactic satellites such as globular clusters (GCs) 
+										and dwarf spheroidal galaxies (dSphs). It employs Bayesian fits of bulk proper motions, 
+										surface density, volume density, center, total mass and velocity anisotropy of 
+										both observed and simulated data. In addition, it has straightforward tools 
+										to perform sky coordinate transformations, as well as to define confidence 
+										regions in color-magnitude diagrams.
+                                        
+                                        <br><br>
+                                        I warmly invite you to download the code and give it a try, and of course, 
+                                        message me if you have any questions! 
+                                        Please cite 
+                                        <a target="profile" href="https://academic.oup.com/mnras/article-abstract/504/1/1355/6237524?redirectedFrom=fulltext">us</a>
+                                        if you find this code useful in your research:
+                                        <pre><code>
+@ARTICLE{Vitral21,
+   author = {{Vitral}, Eduardo},
+    title = "BALRoGO: Bayesian Astrometric Likelihood Recovery of Galactic Objects - Global properties of over one hundred globular clusters with Gaia EDR3",
+  journal = {\mnras},
+     year = 2021,
+    month = jun,
+   volume = {504},
+   number = {1},
+    pages = {1355-1369},
+      doi = {10.1093/mnras/stab947},
+   eprint = {2102.04841},
+   adsurl = {https://ui.adsabs.harvard.edu/abs/2021MNRAS.504.1355V},
+}
+                                        </code></pre>
+
+										<br><br>
+										BALRoGO is available through pip. The quickiest way to install it is
+										to type the following command in your terminal:
+                                        <br><br>
+                                        <code>pip install balrogo</code>
+                                        
+                                        <br><br>
+                                        If you are using Anaconda, you might want to install it directly in your Anaconda bin path:
+                                        
+                                        <pre><code>
+cd path/anaconda3/bin/
+pip install balrogo
+                                        </code></pre>
+                                        
+                                        For updated versions of the code, you can do the same as above, but instead of using 
+                                        <code>pip install balrogo</code>, you should type:
+                                        <br><br>
+                                        <code>pip install --upgrade balrogo</code>
+                                        <br><br><br><br>
+										</p>
+										
+										<h4><font size="+0">Proper motion space</font></h4>
+										<!--span class="image right"-->
+										<p>
+										<div >
+										<span class="image right">
+										<img src="images/fittable.png" alt=""
+										<figcaption><font size="+0"><em>
+										Goodness of fit of the proper motion distribution of galactic 
+										satellites (GC or dSph) plus Milky Way interlopers, applied 
+										to Gaia EDR3 data. While the satellite’s proper motions follow a 
+										normal Gaussian, the Milky Way interloper's proper motion PDF is 
+										not Gaussian, and is much better fitted by a Pearson VII distribution.
+										<em>Image credits:</em> Figure from Vitral (2021).
+										</em></font></figcaption>
+										</span>
+										</div>
+										
+										The study of both GCs and dSphs made a major leap as data
+                                        from the Gaia astrometric mission became available, specially with
+                                        its second and early third release (hereafter Gaia DR2 and Gaia
+                                        EDR3, respectively). This mission provided an overall astrometric
+                                        coverage of stellar velocities, positions, and magnitudes of more than
+                                        A billion stars in the MW and beyond and therefore allowed many deeper
+                                        studies of spherical systems such as GCs and dSphs that can be well
+                                        separated from MW field stars (i.e. interlopers) when combining
+                                        both position, distance, and most importantly, proper motions.
+                                        
+                                        <br><br>
+                                        Although the probability density function (PDF) of proper motions from 
+                                        Milky Way interlopers has been assumed to follow a Gaussian shape in many
+                                        Gaia DR2 related studies, <b><em>I have helped to show that this 
+                                        proper motion distribution 
+                                        has wider wings than a Gaussian, and it is much better modeled by a 
+                                        Pearson VII asymmetric distribution:</em></b>
+                                        
+  										$$\mathrm{PDF_{MW}} = 
+  										\displaystyle{ \left[ \frac{\Gamma{\left( - \frac{1}{2} - \frac{\tau}{2} \right)}}{\Gamma{\left(-1 - \frac{\tau}{2}\right)}} \right]^{2} \, \frac{ \left\{ \left[1 + \left(\frac{\mu_{x}}{a_{x}}\right)^{2} \right] \, \left[1 + \left(\frac{\mu_{y}}{a_{y}}\right)^{2} \right] \,  \right\}^{(1 + \tau)/2}}{ \pi \, a_{x} \, a_{y}} } \ .$$                                   
+
+                                        <br><br>
+                                        I have applied this formalism to derive bulk proper motions of over 
+                                        a hundred GCs and nine Local Group dwarf spheroidals. A complete 
+                                        table with the values of <b><em>bulk proper motions, centers and other structural 
+                                        parameters</em></b> can be accessed here:
+                                        <br><br>
+                                        <ul class="actions">
+            								<a target="fitspm" href="https://gitlab.com/eduardo-vitral/balrogo/-/raw/master/table_gc_dsph.dat" class="button primary">Table of parameters - GCs and dSphs</a>
+            							</ul>
+                                        
+                                        <br><br><br><br>
+										</p>
+										<h4><font size="+0">S&eacutersic deprojection</font></h4>
+										
+										The S&eacutersic model shows a close fit to the surface brightness 
+										(or surface density) profiles of elliptical galaxies and galaxy bulges, 
+										and possibly also those of dwarf spheroidal galaxies and globular clusters. 
+										The deprojected density and mass profiles are important for many astrophysical 
+										applications, in particular for mass-orbit modeling of these systems. 
+										However, the exact deprojection formula for the S&eacutersic model 
+										employs special functions that are not available in most computer languages.
+                                        
+                                        <br><br>
+                                        <b><em>I helped to derived a more precise analytical approximation 
+                                        to the deprojected Sérsic density and mass profiles</em></b> by fitting two-dimensional 
+                                        tenth-order polynomials to the residuals of the analytical approximations by
+                                        <a target="profile" href="https://academic.oup.com/mnras/article/309/2/481/1030461?login=false">Lima Neto et al. (1999, MNRAS, 309, 481, LGM)</a>
+                                        for these profiles:
+                                        
+  										$$f_{\rm new}(x,n) = f_{\rm LGM}(x,n) \ {\rm dex}\left[\sum_{i=0}^{10}\sum_{j=0}^{10-i} a_{i,j}\log^i x\,\log^j n \right] \ .$$                                   
+
+                    
+										<br><br>where f can be both the density or mass profiles (with respective 
+										different values for a<sub>i,j</sub>). As it can be seen in the figure below, 
+										our approximation is the best one for low S&eacutersic index (i.e., n < 3.4).
+                                        
+                                        <br><br> 
+    									<div class="col-12"><span class="image fit"><img src="images/sersic2020.png" alt=""
+    									<figcaption><font size="+0"><em>
+    									Accuracy of different approximations (LGM: Lima Neto et al. 1999; SP: Simonneau & Prada 1999, 
+    									2004; EV: Emsellem & van de Ven 2008) and our new one 
+    									(<a target="profile" href="https://www.aanda.org/articles/aa/full_html/2020/03/aa37202-19/aa37202-19.html">Vitral & Mamon 2020</a>) 
+    									as a function of S&eacutersic index. We note that the EV model performs better at specific 
+    									values of n that are often missed in our logarithmic grid of 1000 values of n.
+    									</em></font></figcaption></span></div>
+    									    									
+    									The a<sub>i,j</sub> coefficients from Vitral & Mamon 2020, 
+    									which were calculated for the intervals of n &#8712; [0.5;10]
+    									and r/R<sub>e</sub> &#8712; [10<sup>-3</sup>;10<sup>3</sup>]
+    									can be accessed below:
+        								
+        								<br><br>
+        								<ul class="actions">
+											<a target="dens20" href="https://gitlab.com/eduardo-vitral/vitral_mamon_2020a/-/raw/master/coeff_dens.txt" class="button primary">Coefficients for density deprojection - Vitral & Mamon 2020</a>
+										</ul>
+								        <ul class="actions">
+            								<a target="mass20" href="https://gitlab.com/eduardo-vitral/vitral_mamon_2020a/-/raw/master/coeff_mass.txt" class="button primary">Coefficients for mass deprojection - Vitral & Mamon 2020</a>
+            							</ul>
+            							 
+            							In Vitral & Mamon 2021, I have recalculated these coefficients for other regions of the 
+            							n x R<sub>e</sub> domain, such that one can use different deprojections at each respective region 
+            							where a deprojection is more performant. <b><em>This hybrid approach is the most precise 
+            							analytical deprojection of the S&eacutersic profile (supposing spherical symmetry), at 
+            							least to the date when it was first used (i.e., 2021). It employs the deprojections 
+            							from 
+            							<a target="profile" href="https://academic.oup.com/mnras/article/309/2/481/1030461?login=false">Lima Neto et al. (1999)</a>, 
+            							<a target="profile" href="https://ui.adsabs.harvard.edu/abs/2004RMxAA..40...69S/abstract">Simonneau & Prada (2004)</a>, 
+            							and the new coefficients (see further below)
+            							derived with the method from Vitral & Mamon 2020.</b></em>
+            							
+            							
+  							        <br><br> 
+  									<div class="col-12"><span class="image fit"><img src="images/sersic2021.png" alt=""
+  									<figcaption><font size="+0"><em>
+  									Characteristics of approximations to the mass and density profiles of the deprojected 
+  									S&eacutersic model. Left two panels: most precise approximation. SP stands for 
+  									Simonneau & Prada (2004), LGM stands for Lima Neto et al. (1999) and VM stands for the 
+  									new Vitral & Mamon 2021 coefficients applied to the Vitral & Mamon (2020) method. The white curves 
+  									indicate a thin region preferred by the LGM approximation. Right two panels:
+                                    accuracy of deprojected mass (left) and density (right) of the hybrid model using VM 
+                                    coefficients, LGM99 and SP04, with respect to the numerical integration done with Mathematica. 
+                                    This is the analog of Fig. 3 of VM20: the color scale is linear for log ratios between −0.001 and
+                                    0.001 and logarithmic beyond. Both sets of figures employ a [100 × 150] grid of 
+                                    [log n × log(r/R<sub>e</sub>)], which is shown in all four panels. The gray region in the upper 
+                                    left of each of the density panels is for regions where the numerical integration of 
+                                    Mathematica reached the underflow limit because of the very rapid decline of density 
+                                    at large radii for low n.
+  									</em></font></figcaption></span></div>
+  									    									
+  									As it can be seen in the figure above, this more precise deprojection 
+  									follows the following hybrid recipe:
+  									
+  									<br><br>
+  									For the mass profile we used
+                                    <br> - n x r/R<sub>e</sub> &#8712; [0.5;1.5] x [1;10<sup>3</sup>]: LGM.
+                                    <br> - n x r/R<sub>e</sub> &#8712; [0.5;3.4] x [10<sup>-4</sup>;1): VM, with coefficients from Vitral & Mamon 2021.
+                                    <br> - n x r/R<sub>e</sub> &#8712; (3.4;10] x [10<sup>-4</sup>;1) &xcup; (1.5;10] x [1;10^3]: SP.
+                                    
+                                    <br><br>
+                                    For the density profile, the division was even simpler:
+                                    <br> - n x r/R<sub>e</sub> &#8712; (3.4;10] x [10<sup>-4</sup>;10^3]: SP
+                                    <br> - n x r/R<sub>e</sub> &#8712; [0.5;3.4] x [10<sup>-4</sup>;10^3]: VM, with coefficients from Vitral & Mamon 2021.
+      								
+      								<br><br>
+      								The a<sub>i,j</sub> coefficients from Vitral & Mamon 2021, 
+  									which were calculated for the intervals of n &#8712; [0.5;3.4]
+  									and r/R<sub>e</sub> &#8712; [10<sup>-4</sup>;10<sup>3</sup>]
+  									can be accessed below:
+  									
+      								<br><br>
+      								<ul class="actions">
+  										<a target="dens21" href="https://gitlab.com/eduardo-vitral/vitral_mamon_2020b/-/raw/master/coeff_dens.txt" class="button primary">Coefficients for density deprojection - Vitral & Mamon 2021</a>
+  									</ul>
+  								    <ul class="actions">
+          								<a target="mass21" href="https://gitlab.com/eduardo-vitral/vitral_mamon_2020b/-/raw/master/coeff_mass.txt" class="button primary">Coefficients for mass deprojection - Vitral & Mamon 2021</a>
+          							</ul>
+    								
+									</section>
+
+								</div>
+							</div>
+
+					</section>
+
+				<!-- Footer -->
+					<section id="footer">
+						<div class="inner">
+							<h2 class="major">General information</h2>
+							
+        						
+							<ul class="contact">
+								<li class="icon solid fa-home">
+									Paris, France.
+								</li>
+								<li class="icon solid fa-envelope">vitral@iap.fr</a></li>
+								<li class="icon brands fa-gitlab"><a target="_new5" href="https://gitlab.com/eduardo-vitral">GitLab</a></li>
+        						<li class="icon solid fa-tree"><a target="_new6" href="genealogy.html">Academic genealogy</a></li>
+        						<li class="icon brands fa-twitter"><a target="_new7" href="https://twitter.com/VitralEduardo">Twitter</a></li>
+							</ul>
+							<ul class="copyright">
+								<li>&copy; Untitled Inc. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+							</ul>
+						</div>
+					</section>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
