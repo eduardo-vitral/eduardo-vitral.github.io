@@ -52,7 +52,15 @@
 								<div class="inner">									
 									<section>
 										<h3 class="major"><font size="+2">Software and tools</font></h3>
+										<nav>
+											<ul>
+												<li><a href="#section1" target="_parent"><span style="color: #FFCBA5">BALROGO: Bayesian Astrometric Likelihood Recovery of Galactic Objects</span></Globular></a></li>
+												<li><a href="#section2" target="_parent"><span style="color: #FFCBA5">Proper motion space</span></a></li>
+												<li><a href="#section3" target="_parent"><span style="color: #FFCBA5">S&eacutersic deprojection</span></a></li>
+											</ul>
+										</nav>
 										<br><br>
+										<section id="section1"></section>
 										<h4><font size="+0">BALROGO: Bayesian Astrometric Likelihood Recovery of Galactic Objects </font></h4>
 										<p><span class="image left"><img src="images/balrogo.png" alt="" 
 										<figcaption><font size="+0"><em>
@@ -111,7 +119,7 @@ pip install balrogo
                                         <code>pip install --upgrade balrogo</code>
                                         <br><br><br><br>
 										</p>
-										
+										<section id="section2"></section>
 										<h4><font size="+0">Proper motion space</font></h4>
 										<!--span class="image right"-->
 										<p>
@@ -149,9 +157,14 @@ pip install balrogo
                                         
   										$$\mathrm{PDF_{MW}} = 
   										\displaystyle{ \left[ \frac{\Gamma{\left( - \frac{1}{2} - \frac{\tau}{2} \right)}}{\Gamma{\left(-1 - \frac{\tau}{2}\right)}} \right]^{2} \, \frac{ \left\{ \left[1 + \left(\frac{\mu_{x}}{a_{x}}\right)^{2} \right] \, \left[1 + \left(\frac{\mu_{y}}{a_{y}}\right)^{2} \right] \,  \right\}^{(1 + \tau)/2}}{ \pi \, a_{x} \, a_{y}} } \ .$$                                   
-
+										
+										<br>
+										Another equivalent form of this function that is better adjusted at large proper motion values (the formula above displays undesirable diamond-like shapes in this regime) can be written as:
+										
+										$$\mathrm{PDF_{MW}} = 
+    									\displaystyle{-\frac{(3 + \tau)}{2} \, \frac{ \left[1 + \left(\frac{\mu_{x}}{a_{x}}\right)^{2} + \left(\frac{\mu_{y}}{a_{y}}\right)^{2} \right]^{(1 + \tau)/2}}{ \pi \, a_{x} \, a_{y}} } \ .$$
                                         <br><br>
-                                        I have applied this formalism to derive bulk proper motions of over 
+                                        I have applied the former formalism to derive bulk proper motions of over 
                                         a hundred GCs and nine Local Group dwarf spheroidals. A complete 
                                         table with the values of <b><em>bulk proper motions, centers and other structural 
                                         parameters</em></b> can be accessed here:
@@ -162,6 +175,7 @@ pip install balrogo
                                         
                                         <br><br><br><br>
 										</p>
+										<section id="section3"></section>
 										<h4><font size="+0">S&eacutersic deprojection</font></h4>
 										
 										The S&eacutersic model shows a close fit to the surface brightness 
@@ -279,18 +293,17 @@ pip install balrogo
 						<div class="inner">
 							<h2 class="major">General information</h2>
 							
-        						
 							<ul class="contact">
 								<li class="icon solid fa-home">
-									Paris, France.
+									Baltimore, MD, USA.
 								</li>
-								<li class="icon solid fa-envelope">vitral@iap.fr</a></li>
+								<li class="icon solid fa-envelope">evitral < at > stsci < dot > edu</at></a></li>
 								<li class="icon brands fa-gitlab"><a target="_new5" href="https://gitlab.com/eduardo-vitral">GitLab</a></li>
         						<li class="icon solid fa-tree"><a target="_new6" href="genealogy.html">Academic genealogy</a></li>
         						<li class="icon brands fa-twitter"><a target="_new7" href="https://twitter.com/VitralEduardo">Twitter</a></li>
 							</ul>
 							<ul class="copyright">
-								<li>&copy; Untitled Inc. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+								<li>&copy; Untitled Inc. All rights reserved.</li><li>Design: <a target="_new7" href="http://html5up.net">HTML5 UP</a></li>
 							</ul>
 						</div>
 					</section>
