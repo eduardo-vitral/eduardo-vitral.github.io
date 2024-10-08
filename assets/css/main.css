@@ -1,12 +1,9 @@
 @import url(fontawesome-all.min.css);
-@import url("https://fonts.googleapis.com/css?family=Raleway:200,700|Source+Sans+Pro:300,600,300italic,600italic");
-/* @import url('https://fonts.googleapis.com/css2?family=Afacad+Flux&display=swap'); */
+/* @import url("https://fonts.googleapis.com/css?family=Raleway:200,700|Source+Sans+Pro:300,600,300italic,600italic"); */
+/* @import url('https://fonts.googleapis.com/css2?family=Asul:wght@400;700&display=swap'); */
+/* @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@500;700&display=swap'); */
 @import url('https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&display=swap');
-/*
-	Solid State by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-*/
+@import url('https://fonts.googleapis.com/css2?family=Asul:wght@400;700&family=Proza+Libre:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap');
 
 html,
 body,
@@ -304,9 +301,10 @@ a.special:not(.button) {
 	text-decoration: none;
 	border-bottom: 0;
 	display: block;
-	font-family: Raleway, Helvetica, sans-serif;
+	/* font-family: Raleway, Helvetica, sans-serif; */
+	font-family: "Proza Libre", sans-serif;
 	font-size: 0.8em;
-	font-weight: 700;
+	font-weight: 800;
 	letter-spacing: 0.1em;
 	margin: 0 0 2em 0;
 	text-transform: uppercase;
@@ -374,8 +372,9 @@ h4,
 h5,
 h6 {
 	color: #ffffff;
-	font-family: Raleway, Helvetica, sans-serif;
-	font-weight: 700;
+	/* font-family: Raleway, Helvetica, sans-serif; */
+	font-family: "Proza Libre", sans-serif;
+	font-weight: 800;
 	letter-spacing: 0.1em;
 	margin: 0 0 1em 0;
 	text-transform: uppercase;
@@ -2305,9 +2304,10 @@ form>.fields>.field.quarter {
 label {
 	color: #ffffff;
 	display: block;
-	font-family: Raleway, Helvetica, sans-serif;
+	/* font-family: Raleway, Helvetica, sans-serif; */
+	font-family: "Proza Libre", sans-serif;
 	font-size: 0.8em;
-	font-weight: 700;
+	font-weight: 800;
 	letter-spacing: 0.1em;
 	margin: 0 0 0.7em 0;
 	text-transform: uppercase;
@@ -3013,9 +3013,10 @@ button,
 	color: #ffffff !important;
 	cursor: pointer;
 	display: inline-block;
-	font-family: Raleway, Helvetica, sans-serif;
+	/* font-family: Raleway, Helvetica, sans-serif; */
+	font-family: "Proza Libre", sans-serif;
 	font-size: 0.8em;
-	font-weight: 700;
+	font-weight: 800;
 	height: 3.75em;
 	letter-spacing: 0.1em;
 	line-height: 3.75em;
@@ -3248,9 +3249,10 @@ button:disabled,
 }
 
 #header nav {
-	font-family: Raleway, Helvetica, sans-serif;
+	/* font-family: Raleway, Helvetica, sans-serif; */
+	font-family: "Proza Libre", sans-serif;
 	font-size: 0.8em;
-	font-weight: 700;
+	font-weight: 800;
 	height: 3em;
 	letter-spacing: 0.1em;
 	line-height: 3em;
@@ -3472,7 +3474,8 @@ button:disabled,
 	border-radius: 5px;
 	border: 0;
 	display: block;
-	font-family: Raleway, Helvetica, sans-serif;
+	/* font-family: Raleway, Helvetica, sans-serif; */
+	font-family: "Proza Libre", sans-serif;
 	font-size: 0.8em;
 	font-weight: 200;
 	letter-spacing: 0.1em;
@@ -3598,9 +3601,10 @@ body.is-menu-visible #menu .inner {
 	-ms-filter: blur(0);
 	filter: blur(0);
 	opacity: 1;
-	font-family: Raleway, Helvetica, sans-serif;
+	/* font-family: Raleway, Helvetica, sans-serif; */
+	font-family: "Proza Libre", sans-serif;
 	font-size: 1em;
-	font-weight: 200;
+	font-weight: 300;
 	letter-spacing: 0.1em;
 	line-height: 2;
 	text-transform: uppercase;
@@ -3710,7 +3714,8 @@ body.is-preload #banner p {
 }
 
 #wrapper>header p {
-	font-family: Raleway, Helvetica, sans-serif;
+	/* font-family: Raleway, Helvetica, sans-serif; */
+	font-family: "Afacad Flux", sans-serif;
 	font-size: 1em;
 	font-weight: 200;
 	letter-spacing: 0.1em;
