@@ -3,7 +3,9 @@
 /* @import url('https://fonts.googleapis.com/css2?family=Asul:wght@400;700&display=swap'); */
 /* @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@500;700&display=swap'); */
 @import url('https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Roboto+Slab:wght@100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Asul:wght@400;700&family=Proza+Libre:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Roboto+Slab:wght@100..900&display=swap');
 
 html,
 body,
@@ -218,10 +220,10 @@ input,
 select,
 textarea {
 	color: #ffffff;
-	font-family: "Afacad Flux", sans-serif;
+	font-family: "Afacad Flux", serif;
 	font-optical-sizing: auto;
 	font-size: 17pt;
-	font-weight: 250;
+	font-weight: 200;
 	line-height: 1.75;
 	font-style: normal;
 	font-variation-settings: "slnt" 0;
@@ -302,9 +304,10 @@ a.special:not(.button) {
 	border-bottom: 0;
 	display: block;
 	/* font-family: Raleway, Helvetica, sans-serif; */
-	font-family: "Proza Libre", sans-serif;
+	font-family: "Libre Baskerville", serif;
+	font-weight: 700;
+	font-style: normal;
 	font-size: 0.8em;
-	font-weight: 800;
 	letter-spacing: 0.1em;
 	margin: 0 0 2em 0;
 	text-transform: uppercase;
@@ -373,8 +376,10 @@ h5,
 h6 {
 	color: #ffffff;
 	/* font-family: Raleway, Helvetica, sans-serif; */
-	font-family: "Proza Libre", sans-serif;
-	font-weight: 800;
+	font-family: "Libre Baskerville", serif;
+	font-weight: 700;
+	font-style: normal;
+	/* font-size: 0.8em; */
 	letter-spacing: 0.1em;
 	margin: 0 0 1em 0;
 	text-transform: uppercase;
@@ -2305,9 +2310,10 @@ label {
 	color: #ffffff;
 	display: block;
 	/* font-family: Raleway, Helvetica, sans-serif; */
-	font-family: "Proza Libre", sans-serif;
+	font-family: "Libre Baskerville", serif;
+	font-weight: 400;
+	font-style: normal;
 	font-size: 0.8em;
-	font-weight: 800;
 	letter-spacing: 0.1em;
 	margin: 0 0 0.7em 0;
 	text-transform: uppercase;
@@ -3014,9 +3020,10 @@ button,
 	cursor: pointer;
 	display: inline-block;
 	/* font-family: Raleway, Helvetica, sans-serif; */
-	font-family: "Proza Libre", sans-serif;
+	font-family: "Libre Baskerville", serif;
+	font-weight: 400;
+	font-style: normal;
 	font-size: 0.8em;
-	font-weight: 800;
 	height: 3.75em;
 	letter-spacing: 0.1em;
 	line-height: 3.75em;
@@ -3250,9 +3257,10 @@ button:disabled,
 
 #header nav {
 	/* font-family: Raleway, Helvetica, sans-serif; */
-	font-family: "Proza Libre", sans-serif;
+	font-family: "Libre Baskerville", serif;
+	font-weight: 700;
+	font-style: normal;
 	font-size: 0.8em;
-	font-weight: 800;
 	height: 3em;
 	letter-spacing: 0.1em;
 	line-height: 3em;
@@ -3475,9 +3483,10 @@ button:disabled,
 	border: 0;
 	display: block;
 	/* font-family: Raleway, Helvetica, sans-serif; */
-	font-family: "Proza Libre", sans-serif;
+	font-family: "Libre Baskerville", serif;
+	font-weight: 100;
+	font-style: normal;
 	font-size: 0.8em;
-	font-weight: 200;
 	letter-spacing: 0.1em;
 	line-height: 1.85em;
 	padding: 0.75em 0;
@@ -3602,9 +3611,9 @@ body.is-menu-visible #menu .inner {
 	filter: blur(0);
 	opacity: 1;
 	/* font-family: Raleway, Helvetica, sans-serif; */
-	font-family: "Proza Libre", sans-serif;
+	font-family: "Libre Baskerville", serif;
 	font-size: 1em;
-	font-weight: 300;
+	font-weight: 200;
 	letter-spacing: 0.1em;
 	line-height: 2;
 	text-transform: uppercase;
@@ -3715,7 +3724,7 @@ body.is-preload #banner p {
 
 #wrapper>header p {
 	/* font-family: Raleway, Helvetica, sans-serif; */
-	font-family: "Afacad Flux", sans-serif;
+	font-family: "Afacad Flux", serif;
 	font-size: 1em;
 	font-weight: 200;
 	letter-spacing: 0.1em;
